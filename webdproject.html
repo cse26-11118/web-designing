@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flipkart Style Store</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+body{ background:#f1f3f6; }
+
+/* NAVBAR */
+.navbar{
+    position:sticky; top:0; z-index:1000;
+    background:#2874f0;
+    padding:10px 20px;
+    display:flex; align-items:center; gap:20px;
+    color:white;
+}
+.logo{ font-size:24px; font-weight:bold; }
+.search{ flex:1; }
+.search input{
+    width:100%; padding:8px 12px; border:none; outline:none;
+}
+.nav-actions{ display:flex; gap:20px; font-weight:bold; }
+
+/* CATEGORY BAR */
+.category-bar{
+    background:white;
+    padding:10px 15px;
+    display:flex; gap:25px;
+    font-weight:bold;
+    border-bottom:1px solid #ddd;
+    overflow-x:auto;
+}
+.category-bar div{ cursor:pointer; white-space:nowrap; }
+
+/* SECTION */
+.section{
+    margin:20px;
+    background:rgb(192, 186, 163);
+    border-radius:4px;
+    padding:15px;
+}
+.section h2{
+    margin-bottom:15px;
+    color:#2874f0;
+}
+
+/* PRODUCTS GRID */
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:15px;
+}
+.product{
+    border:1px solid #eee;
+    padding:10px;
+    text-align:center;
+}
+.product img{
+    width:100%; height:160px; object-fit:contain;
+}
+.title{ font-size:14px; margin:8px 0; }
+.price{ font-weight:bold; color:green; }
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div class="logo">Flipkart</div>
+    <div class="search">
+        <input type="text" placeholder="Search for products, brands and more">
+    </div>
+    <div class="nav-actions">
+        <div>Login</div>
+        <div>Cart</div>
+    </div>
+</div>
+
+<!-- CATEGORY BAR -->
+<div class="category-bar">
+    <div>Mobiles</div>
+    <div>Fashion</div>
+    <div>Electronics</div>
+    <div>Home</div>
+    <div>Appliances</div>
+    <div>Beauty</div>
+    <div>Sports</div>
+    <div>Grocery</div>
+</div>
+
+<!-- MOBILES -->
+<div class="section">
+<h2>Mobiles</h2>
+<div class="products">
+<div class="product"><img src="https://5.imimg.com/data5/SELLER/Default/2023/9/340219042/HZ/WB/OH/195428570/samsung-note-20-ultra-mobile-500x500.jpeg"><div class="title">Samsung Galaxy</div><div class="price">₹39,999</div></div>
+<div class="product"><img src="https://rukminim2.flixcart.com/image/480/640/ktketu80/mobile/6/n/d/iphone-13-mlpg3hn-a-apple-original-imag6vpyghayhhrh.jpeg?q=90"><div class="title">iPhone 13</div><div class="price">₹59,999</div></div>
+</div>
+</div>
+
+<!-- FASHION -->
+<div class="section">
+<h2>Fashion</h2>
+<div class="products">
+<div class="product"><img src="https://chyle.in/cdn/shop/files/IMG_8744.jpg?v=1724597667"><div class="title">Men T-Shirt</div><div class="price">₹999</div></div>
+<div class="product"><img src="https://m.media-amazon.com/images/I/61jQGZBXUmL._AC_UY1100_.jpg"><div class="title">Women Dress</div><div class="price">₹1,499</div></div>
+</div>
+</div>
+
+<!-- ELECTRONICS -->
+<div class="section">
+<h2>Electronics</h2>
+<div class="products">
+<div class="product"><img src="https://m.media-amazon.com/images/I/71dyfY6G0aL._AC_UF1000,1000_QL80_.jpg"><div class="title">Laptop</div><div class="price">₹54,990</div></div>
+<div class="product"><img src="https://images.prestigeonline.com/wp-content/uploads/sites/8/2024/03/06152510/apple_airpods-max_hero_12082020-scaled.jpg"><div class="title">Headphones</div><div class="price">₹1,799</div></div>
+</div>
+</div>
+
+<!-- HOME -->
+<div class="section">
+<h2>Home</h2>
+<div class="products">
+<div class="product"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPGq9aZYEVAewb0JqG8v12Sf6Om9LMVTSfZA&s"><div class="title">Sofa</div><div class="price">₹18,999</div></div>
+<div class="product"><img src="https://m.media-amazon.com/images/I/71D2YNJoNNL._AC_UF1000,1000_QL80_.jpg"><div class="title">Lamp</div><div class="price">₹1,299</div></div>
+</div>
+</div>
+
+<!-- APPLIANCES -->
+<div class="section">
+<h2>Appliances</h2>
+<div class="products">
+<div class="product"><img src="https://whirlpoolindia.vtexassets.com/arquivos/ids/167790/Xpert-care-Silver-lid-open-7kg_1500x1500.jpg?v=638731268018600000"><div class="title">Washing Machine</div><div class="price">₹22,999</div></div>
+<div class="product"><img src="https://static.vecteezy.com/system/resources/thumbnails/041/437/957/small_2x/ai-generated-transform-your-cooking-modern-microwave-with-closed-door-kitchen-electric-appliance-generative-ai-photo.jpg"><div class="title">Microwave</div><div class="price">₹8,499</div></div>
+</div>
+</div>
+
+<!-- BEAUTY -->
+<div class="section">
+<h2>Beauty</h2>
+<div class="products">
+<div class="product"><img src="https://images-static.nykaa.com/media/catalog/product/7/0/70d811cSUGAR00000558_1a.jpg?tr=w-500"><div class="title">Makeup Kit</div><div class="price">₹2,199</div></div>
+<div class="product"><img src="https://rukminim2.flixcart.com/image/480/640/xif0q/perfume/g/p/r/80-blue-luxury-perfume-gift-set-20-ml-x-4-eau-de-parfum-envy-men-original-imaheb7bucpyk3n6.jpeg?q=90"><div class="title">Perfume</div><div class="price">₹1,599</div></div>
+</div>
+</div>
+
+<!-- SPORTS -->
+<div class="section">
+<h2>Sports</h2>
+<div class="products">
+<div class="product"><img src="https://cdnmedia.dsc-cricket.com/media/catalog/product/cache/42540e3df8c40aae349dc161e4942d7b/d/s/dsc-brown-super-natrual-cricket-bat-22.jpg"><div class="title">Cricket Bat</div><div class="price">₹2,499</div></div>
+<div class="product"><img src="https://rukminim2.flixcart.com/image/480/640/xif0q/ball/u/8/y/430-football-5-34-5-1-na-football-captain-original-imah8ymy7ha8gjv9.jpeg?q=90"><div class="title">Football</div><div class="price">₹899</div></div>
+</div>
+</div>
+
+<!-- GROCERY -->
+<div class="section">
+<h2>Grocery</h2>
+<div class="products">
+<div class="product"><img src="https://mahboula.grandhyper.com/image/cache/catalog/products/1/8908000676435-1000x1000.jpg"><div class="title">Rice (5kg)</div><div class="price">₹499</div></div>
+<div class="product"><img src="https://www.quickpantry.in/cdn/shop/products/fortune-soyabean-oil-5-l-quick-pantry.jpg?v=1710538017"><div class="title">Cooking Oil</div><div class="price">₹799</div></div>
+</div>
+</div>
+
+</body>
+</html>
