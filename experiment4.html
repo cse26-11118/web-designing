@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel Room Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 400px;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 30px auto;
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 6px;
+        }
+        input, select, textarea {
+            width: 95%;
+        }
+        textarea {
+            height: 70px;
+        }
+        .buttons {
+            text-align: center;
+            margin-top: 10px;
+        }
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 style="text-align:center;">Hotel Room Booking Form</h2>
+
+    <form>
+        <table>
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email"></td>
+            </tr>
+            <tr>
+                <td>Phone:</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Check-in Date:</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Check-out Date:</td>
+                <td><input type="date"></td>
+            </tr>
+            <tr>
+                <td>Room Type:</td>
+                <td>
+                    <select>
+                        <option>Single Room</option>
+                        <option>Double Room</option>
+                        <option>Deluxe Room</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Number of Guests:</td>
+                <td><input type="number" min="1"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">Special Requests:</td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <div class="buttons">
+            <button type="submit">Book Now</button>
+            <button type="reset">Reset Form</button>
+        </div>
+    </form>
+</div>
+
+<footer>
+    Student Name: <strong>Saurabh</strong> | Adm. No.: <strong>2025B01011118</strong>
+</footer>
+
+</body>
+</html>
